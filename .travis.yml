@@ -1,0 +1,14 @@
+language: scala
+scala:
+- 2.11.7
+jdk:
+- oraclejdk8
+script:
+- sbt scalastyle test assembly
+cache:
+  directories:
+  - $HOME/.m2
+  - $HOME/.ivy2
+notifications:
+  email:
+  - lance@buddho.io
